@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profils - Lentura</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="public/logo.png" alt="Lentura Logo" class="logo">
+                <h1 class="site-title">Lentura</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index-fr.html" class="nav-link">Accueil</a></li>
+                    <li><a href="profils-fr.html" class="nav-link active">Profils</a></li>
+                    <li><a href="contact-fr.html" class="nav-link">Contact</a></li>
+                    <li><a href="apropos-fr.html" class="nav-link">À propos</a></li>
+                    <li><a href="profils-de.html" class="lang-switch">DE</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="profiles-section">
+            <div class="container">
+                <h2 class="page-title">Découvrez nos correspondants</h2>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="language-filter">Filtrer par langue :</label>
+                        <select id="language-filter" class="filter-select">
+                            <option value="">Toutes les langues</option>
+                            <option value="Français">Français</option>
+                            <option value="Allemand">Allemand</option>
+                            <option value="Anglais">Anglais</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="interest-filter">Filtrer par centre d'intérêt :</label>
+                        <select id="interest-filter" class="filter-select">
+                            <option value="">Tous les centres d'intérêt</option>
+                            <option value="Philosophie">Philosophie</option>
+                            <option value="Littérature">Littérature</option>
+                            <option value="Jardinage">Jardinage</option>
+                            <option value="Cinéma">Cinéma</option>
+                            <option value="Cuisine">Cuisine</option>
+                            <option value="Histoire">Histoire</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="profiles-container" class="profiles-grid">
+                    <!-- Les profils seront générés par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lentura. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

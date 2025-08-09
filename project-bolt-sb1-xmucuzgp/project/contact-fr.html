@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lentura</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="public/logo.png" alt="Lentura Logo" class="logo">
+                <h1 class="site-title">Lentura</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index-fr.html" class="nav-link">Accueil</a></li>
+                    <li><a href="profils-fr.html" class="nav-link">Profils</a></li>
+                    <li><a href="contact-fr.html" class="nav-link active">Contact</a></li>
+                    <li><a href="apropos-fr.html" class="nav-link">À propos</a></li>
+                    <li><a href="contact-de.html" class="lang-switch">DE</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="page-title">Contactez-nous</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Écrivez-nous</h3>
+                        <p>Vous souhaitez rejoindre notre communauté de correspondants ou avez des questions ? N'hésitez pas à nous écrire !</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>contact@lentura.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🌍</span>
+                                <span>Partout dans le monde</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="inscription">Demande d'inscription</option>
+                                <option value="question">Question générale</option>
+                                <option value="probleme">Signaler un problème</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Parlez-nous de vous et de votre intérêt pour la correspondance..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lentura. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Lentura</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="public/logo.png" alt="Lentura Logo" class="logo">
+                <h1 class="site-title">Lentura</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index-de.html" class="nav-link">Startseite</a></li>
+                    <li><a href="profils-de.html" class="nav-link">Profile</a></li>
+                    <li><a href="contact-de.html" class="nav-link active">Kontakt</a></li>
+                    <li><a href="apropos-de.html" class="nav-link">Über uns</a></li>
+                    <li><a href="contact-fr.html" class="lang-switch">FR</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Menü">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="page-title">Kontaktieren Sie uns</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Schreiben Sie uns</h3>
+                        <p>Sie möchten unserer Brieffreunde-Gemeinschaft beitreten oder haben Fragen? Zögern Sie nicht, uns zu schreiben!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>contact@lentura.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🌍</span>
+                                <span>Überall auf der Welt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Vollständiger Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-Mail-Adresse</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Wählen Sie einen Betreff</option>
+                                <option value="anmeldung">Anmeldeanfrage</option>
+                                <option value="frage">Allgemeine Frage</option>
+                                <option value="problem">Problem melden</option>
+                                <option value="andere">Andere</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Erzählen Sie uns von sich und Ihrem Interesse an Brieffreundschaften..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lentura. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
